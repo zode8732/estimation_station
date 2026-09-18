@@ -1,12 +1,16 @@
 {
     "questions": [
         {
-            "question": "days in a year",
-            "answer": "365"
+            "question": "how many cars were sold in 2022",
+            "answer": 1000000
         },
         {
-            "question": "days in a leap year",
-            "answer": "366"
+            "question": "how many people live in the US",
+            "answer": 330000000
+        },
+        {
+            "question": "how many people live in India",
+            "answer": 1400000000
         }
     ]
 }
