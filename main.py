@@ -15,10 +15,7 @@ def calculate_score(answer, expected_answer):
         score += 1000
     else:
         print("wrong answer")
-        temp_score = abs(answer - expected_answer)
-        if temp_score == 0:
-            quit("score calculation error")
-        temp_score = 10 *m.log10(temp_score)
+        temp_score = 100 * abs(m.log10(answer) - m.log10(expected_answer))
         score += 1000 - temp_score
 
 def question_loop():
