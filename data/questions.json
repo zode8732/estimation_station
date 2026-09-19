@@ -11,6 +11,30 @@
         {
             "question": "how many people live in India",
             "answer": 1400000000
+        },
+        {
+            "question": "how many pokemon are there",
+            "answer": 1010
+        },
+        {
+            "question": "what is the valution of openai (2026)",
+            "answer": 500000000000
+        },
+        {
+            "question": "how many goals does ronaldo have in his career (2026)",
+            "answer": 979
+        },
+        {
+            "question": "how many people attend tjhsst (2026-27)",
+            "answer": 2150
+        },
+        {
+            "question": "what is elon musk net worth (2026)",
+            "answer": 1150000000000
+        },
+        {
+            "question": "how many girlfriends do i have",
+            "answer": 0
         }
     ]
 }
