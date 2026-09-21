@@ -18,8 +18,11 @@ def calculate_score(answer, expected_answer):
         if answer == 0 or expected_answer == 0:
             temp_score = 999
         else:
-            temp_score = 100 * abs(m.log2(abs(answer)) - m.log2(abs(expected_answer)))
+            temp_score = 200 * abs(m.log2(abs(answer)) - m.log2(abs(expected_answer)))
+            if temp_score > 1000:
+                temp_score = 999
         score += 1000 - temp_score
+        print(f"added score: {1000 - temp_score}")
 
 def question_loop():
     question__number = rnd.randint(0, len(questions) - 1)
