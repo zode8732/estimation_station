@@ -19,6 +19,7 @@ def calculate_score(answer, expected_answer):
             if temp_score > 1000:
                 temp_score = 999
         print(f"added score: {1000 - temp_score}")
+        print(f"percent error: {(answer-expected_answer)/expected_answer*100}%")
         return 1000 - temp_score
 
 def question_loop():
@@ -29,7 +30,7 @@ def question_loop():
     global results
     points = calculate_score(answer, expected_answer)
     score += points
-    results.append((answer, expected_answer, points))
+    results.append((questions[question__number]["question"], answer, expected_answer, points))
     global correct_answer
     if answer == expected_answer:
         correct_answer += 1
@@ -45,5 +46,6 @@ for _ in range(num_questions):
 print("gg")
 print(f"score: {score}")
 print(f"correct answers: {correct_answer}/{num_questions}")
+print(f"avg score: {score/num_questions if num_questions > 0 else 0}")
 
 # done
