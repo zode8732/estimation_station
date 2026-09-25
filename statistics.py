@@ -1,5 +1,3 @@
-import math as m
-
 def print_stats(score, correct_answer, num_questions):
     print(f"score: {score}")
     print(f"correct answers: {correct_answer}/{num_questions}")

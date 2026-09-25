@@ -1,6 +1,4 @@
-import json
 import random as rnd
-import math as m
 import time
 import threading
 
