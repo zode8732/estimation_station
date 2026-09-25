@@ -13,7 +13,9 @@ def question_loop(questions):
     expected_answer = questions[question__number]["answer"]
     timer = threading.Timer(10.0, lambda: print(" time's up!\nusing -1\npress enter to continue"))
     timer.start()
-    answer = int(input(questions[question__number]["question"] + " : "))
+    answer = input(questions[question__number]["question"] + " : ")
+    if answer.isdigit():
+        answer = int(answer)
     timer.cancel()
     global score
     global results
