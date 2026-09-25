@@ -6,7 +6,7 @@ def calculate_score(answer, expected_answer):
         return 1000
     else:
         print("wrong answer")
-        if answer == 0 or expected_answer == 0 or answer == -1:
+        if answer == 0 or expected_answer == 0 or answer == -1 or answer == None or answer == "":
             temp_score = 999
         else:
             temp_score = 200 * abs(m.log2(abs(answer)) - m.log2(abs(expected_answer)))
