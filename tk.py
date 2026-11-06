@@ -19,14 +19,15 @@ def start_estimation():
     questioning()
 
 def questioning():
-    label.config(text="placeholder text")
+    label.config(text=change_exp())
 
-def get_questions():
+def change_exp():
     global exp_input, exp_output
     from questions import get_questions
     questions = get_questions()
-    exp_input = questions[0]
-    exp_output = questions[1]
+    exp_input = questions[0]["answer"]
+    exp_output = questions[0]["question"]
+    return exp_output
 
 root = tk.Tk()
 root.title("Estimation Station")
@@ -43,4 +44,3 @@ button = tk.Button(frame, text="click here", command=start_estimation, anchor='c
 button.pack()
 
 root.mainloop()
-
